@@ -17,7 +17,15 @@
     --blue: #3563E9;
     --red: #F23F3F;
     --lightgrey: #F5F6FB;
+    --expiredgrey: #F0EEEE;
     --grey: #CECECE;
+    --pink: #FEC2FF;
+    --yellow: #FFF500;
+    --lightgreen: #BAFB00;
+    --bluegreen: #00FFFF;
+    --green: #0FBE00;
+    --orange: #FF8A00;
+    --lightpink: #F6EEEE;
 
     --regular: 400;
     --medium: 500;
@@ -77,6 +85,10 @@ a:active {color: var(--blue); font-weight: var(--bold);}
 
 /* 배경색상 */
 .bg-white {background-color: var(--white);}
+.bg-pink {background-color: var(--pink);}
+.bg-yellow {background-color: var(--yellow);}
+.bg-lightgreen {background-color: var(--lightgreen);}
+.bg-bluegreen {background-color: var(--bluegreen);}
 
 /* 마진 */
 .margin-bottom-20 {margin-bottom: 20px;}
@@ -89,6 +101,8 @@ a:active {color: var(--blue); font-weight: var(--bold);}
 .h-45 {height: 45px;}
 
 /* 위치 */
+.justify-wrap {flex-wrap: wrap;}
+.justify-column {flex-direction: column;}
 .justify-sub-left {display: flex; align-items: start;}
 .justify-sub-center {display: flex; align-items: center;}
 .justify-main-between {display: flex; justify-content: space-between;}
@@ -103,6 +117,13 @@ button {border-radius: 5px; font-weight: var(--bold); letter-spacing: 0.5px; cur
 .btn-blue-blue {background-color: var(--blue); border: 1px solid var(--blue); color: var(--white);}
 .btn-blue-blue:hover {background-color: var(--blue); border: 1px solid var(--blue); color: var(--white);}
 
+/* 태그 */
+.tag {padding: 0 20px; height: 30px; border-radius: 5px; display: flex; justify-content: center; align-items: center; font-weight: var(--semi-bold);}
+.tag-pink {background-color: var(--pink); color: var(--black);}
+.tag-yellow {background-color: var(--yellow); color: var(--black);}
+.tag-lightgreen {background-color: var(--lightgreen); color: var(--black);}
+.tag-bluegreen {background-color: var(--bluegreen); color: var(--black);}
+
 /* 헤더 */
 #header {display: flex; align-items: center; height: 100px; background-color: var(--white); grid-column: 1/3;}
 #header .header-logo {flex-grow: 1;}
@@ -112,8 +133,8 @@ button {border-radius: 5px; font-weight: var(--bold); letter-spacing: 0.5px; cur
 .header-nav li.on>a {color: var(--blue); font-weight: var(--bold);}
 
 /* 메인 */
-#wrap {box-sizing: border-box; width: 90%; margin: 0 auto; display: grid; grid-template-columns: 350px 1fr; column-gap: 20px;}
-#main {justify-items: stretch;}
+#wrap {box-sizing: border-box; width: 90%; margin: 0 auto; display: grid; grid-template-columns: 350px minmax(auto, calc(100% - 370px)); column-gap: 20px;}
+#main {justify-items: stretch; height: fit-content;}
 .main-img {height: 550px; overflow: hidden; border-radius: 5px;}
 .main-img>img {width: 100%;}
 .img-text-div {display: flex; flex-direction: column; align-items: center; position: absolute; top: 65%; left: 50%; transform: translate(-50%, -50%);}
@@ -123,11 +144,19 @@ button {border-radius: 5px; font-weight: var(--bold); letter-spacing: 0.5px; cur
 .ico-animation1 {animation: fade-in-1 1s infinite; padding-top: 5px}
 .ico-animation2 {animation: fade-in-2 1s infinite;}
 .ico-animation3 {animation: fade-in-3 1s infinite; padding-bottom: 5px;}
-.main-div {width: 100%; background-color: var(--lightgrey); padding: 40px;}
+.main-div {background-color: var(--lightgrey); padding: 40px;}
 .main-div>h3 {color: var(--blue);}
+.card {background-color: var(--white); border: 1px solid var(--grey); border-radius: 5px; width: 240px; padding: 20px; margin-bottom: 10px;}
+.expired {background-color: var(--expiredgrey);}
+.card:hover {background-color: var(--blue); color: var(--white);}
+.card>h3 {text-align: center; margin: 0;}
+.card>div {margin-top: 20px; display: flex; align-items: center;}
+.card>span {font-size: 16px;}
+.card .card-sub-title {font-weight: var(--semi-bold); width: 50px;}
+.card .card-sub-content {font-weight: var(--regular);}
 
 /* 왼사이드바 */
-#left-bar {background-color: var(--lightgrey); border-radius: 5px; padding: 100px 20px 20px 20px;}
+#left-bar {background-color: var(--lightgrey); border-radius: 5px; padding: 100px 20px 20px 20px; height: fit-content;}
 .profile {width: 160px; height: 160px;}
 .left-bar-div {padding: 20px; flex-direction: column; border-radius: 5px;}
 .left-bar-div p  {font-size: 14px;}

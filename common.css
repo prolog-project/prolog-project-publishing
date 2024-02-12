@@ -18,7 +18,15 @@
     --red: #F23F3F;
     --lightgrey: #F5F6FB;
     --expiredgrey: #F0EEEE;
+    --expiredgrey: #F0EEEE;
     --grey: #CECECE;
+    --pink: #FEC2FF;
+    --yellow: #FFF500;
+    --lightgreen: #BAFB00;
+    --bluegreen: #00FFFF;
+    --green: #0FBE00;
+    --orange: #FF8A00;
+    --lightpink: #F6EEEE;
     --pink: #FEC2FF;
     --yellow: #FFF500;
     --lightgreen: #BAFB00;
@@ -72,12 +80,17 @@
 
 /* 전역 */
 html {font-family: 'Inter'; font-weight: var(--medium); color: var(--black);}
+html::-webkit-scrollbar {display: none;}
 p {margin: 0;}
 a {text-decoration: none;}
 a:link {color: var(--black);}
 a:visited {color:var(--black);}
 a:hover {color: var(--blue); font-weight: var(--bold);}
 a:active {color: var(--blue); font-weight: var(--bold);}
+div {overflow-y: overlay;}
+div::-webkit-scrollbar {width: 30px;}
+div::-webkit-scrollbar-thumb {background-clip: padding-box; background-color: var(--blue); border: 20px solid transparent; border-left: 0px; border-radius: 5px;}
+div::-webkit-scrollbar-track {background-clip: padding-box; background-color: var(--expiredgrey); border: 20px solid transparent; border-left: 0px; border-radius: 5px;}
 
 /* 그리드 */
 .grid-1-3 {grid-column: 1/3;}
@@ -99,6 +112,10 @@ a:active {color: var(--blue); font-weight: var(--bold);}
 .w-250 {width: 250px;}
 .h-35 {height: 35px;}
 .h-45 {height: 45px;}
+.f-g-1 {flex-grow: 1;}
+
+/* 간격 */
+.gap-20 {gap: 20px;}
 
 /* 위치 */
 .justify-wrap {flex-wrap: wrap;}
@@ -145,15 +162,26 @@ button {border-radius: 5px; font-weight: var(--bold); letter-spacing: 0.5px; cur
 .ico-animation2 {animation: fade-in-2 1s infinite;}
 .ico-animation3 {animation: fade-in-3 1s infinite; padding-bottom: 5px;}
 .main-div {background-color: var(--lightgrey); padding: 40px;}
-.main-div>h3 {color: var(--blue);}
-.card {background-color: var(--white); border: 1px solid var(--grey); border-radius: 5px; width: 240px; padding: 20px; margin-bottom: 10px;}
-.expired {background-color: var(--expiredgrey);}
+.sub-header {color: var(--blue);}
+.card {background-color: var(--white); border: 1px solid var(--grey); border-radius: 5px; width: 240px; padding: 20px; margin-bottom: 10px; cursor: pointer;}
 .card:hover {background-color: var(--blue); color: var(--white);}
 .card>h3 {text-align: center; margin: 0;}
 .card>div {margin-top: 20px; display: flex; align-items: center;}
 .card>span {font-size: 16px;}
 .card .card-sub-title {font-weight: var(--semi-bold); width: 50px;}
 .card .card-sub-content {font-weight: var(--regular);}
+.item-div {background-color: var(--white); border: 1px solid var(--grey); border-radius: 5px; padding: 20px; height: 390px;}
+.item {background-color: var(--white); border: 1px solid var(--grey); border-radius: 5px; padding: 20px; cursor: pointer;}
+.item:hover {background-color: var(--blue); color: var(--white);}
+.item:nth-child(n+2) {margin-top: 20px;}
+.item .progressing {color: var(--green);}
+.item:hover .progressing {color: var(--bluegreen);}
+.item .done {color: var(--blue);}
+.item:hover .done {color: var(--bluegreen);}
+.item .item-title {font-weight: var(--semi-bold);}
+progress-div {font-weight: var(--regular);}
+.expired {background-color: var(--expiredgrey);}
+
 
 /* 왼사이드바 */
 #left-bar {background-color: var(--lightgrey); border-radius: 5px; padding: 100px 20px 20px 20px; height: fit-content;}

@@ -87,7 +87,7 @@ a:link {color: var(--black);}
 a:visited {color:var(--black);}
 a:hover {color: var(--blue); font-weight: var(--bold);}
 a:active {color: var(--blue); font-weight: var(--bold);}
-div {overflow-y: overlay;}
+div {overflow-y: overlay; overflow-x: hidden;}
 div::-webkit-scrollbar {width: 30px;}
 div::-webkit-scrollbar-thumb {background-clip: padding-box; background-color: var(--blue); border: 20px solid transparent; border-left: 0px; border-radius: 5px;}
 div::-webkit-scrollbar-track {background-clip: padding-box; background-color: var(--expiredgrey); border: 20px solid transparent; border-left: 0px; border-radius: 5px;}
@@ -128,6 +128,7 @@ select {border-radius: 5px; border: 1px solid var(--grey);}
 
 /* 마진 */
 .m-t-30 {margin-top: 30px;}
+.m-b-30 {margin-bottom: 30px;}
 
 /* 위치 */
 .justify-wrap {display: flex; flex-wrap: wrap;}
@@ -136,6 +137,7 @@ select {border-radius: 5px; border: 1px solid var(--grey);}
 .justify-sub-center {display: flex; align-items: center;}
 .justify-main-between {display: flex; justify-content: space-between;}
 .justify-main-left {display: flex; justify-content: start;}
+.justify-main-center {display: flex; justify-content: center;}
 
 /* 버튼 */
 button {border-radius: 5px; font-weight: var(--bold); letter-spacing: 0.5px; cursor: pointer;}
@@ -153,6 +155,24 @@ button {border-radius: 5px; font-weight: var(--bold); letter-spacing: 0.5px; cur
 .tag-yellow {background-color: var(--yellow); color: var(--black);}
 .tag-lightgreen {background-color: var(--lightgreen); color: var(--black);}
 .tag-bluegreen {background-color: var(--bluegreen); color: var(--black);}
+
+/* 캘린더 */
+.calendar-div {width: 100%; height: 550px; border-radius: 5px; border: 1px solid var(--grey);}
+.calendar-div .date-header {display: flex; align-items: center; padding: 20px;}
+.calendar-div .date-header .date-before {background-image: url('./imgs/calendar-before-arrow.png'); background-repeat: no-repeat; width: 20px; height: 20px; cursor: pointer; margin: 0 20px;}
+.calendar-div .date-header .date-after {background-image: url('./imgs/calendar-after-arrow.png'); background-repeat: no-repeat; width: 20px; height: 20px; cursor: pointer; margin: 0 20px;}
+.calendar-div .date-body {display: flex; flex-direction: column; padding: 0 20px;}
+.calendar-div .date-body .week {display: flex; justify-content: space-between;}
+.calendar-div .date-body .days {display: flex; justify-content: space-between;}
+.calendar-div .date-body .week .week-item {display: flex; justify-content: center; width: 100px; margin-bottom: 30px;}
+.calendar-div .date-body .week .week-item p{font-size: 16px; font-weight: var(--semi-bold);}
+.calendar-div .date-body .week .week-item:nth-child(1) p {color: var(--red);}
+.calendar-div .date-body .week .week-item:nth-last-child(1) p {color: var(--blue);}
+.calendar-div .date-body .days .days-item {display: flex; flex-direction: column; align-items: center; width: 100px; margin-bottom: 20px;}
+.calendar-div .date-body .days .days-item p{font-size: 14px; font-weight: var(--semi-bold);}
+.calendar-div .date-body .days .days-item>picture {width: 18px; height: 18px; margin: 10px 0;}
+.calendar-div .date-body .days .days-item>picture.done {background-image: url('./imgs/calendar-done.png'); background-repeat: no-repeat;}
+.calendar-div .date-body .days .days-item>picture.undo {background-image: url('./imgs/calendar-undo.png'); background-repeat: no-repeat;}
 
 /* 헤더 */
 #header {display: flex; align-items: center; height: 100px; background-color: var(--white); grid-column: 1/3;}
@@ -195,16 +215,12 @@ button {border-radius: 5px; font-weight: var(--bold); letter-spacing: 0.5px; cur
 progress-div {font-weight: var(--regular);}
 .expired {background-color: var(--expiredgrey);}
 .note-div {background-color: var(--white); border: 1px solid var(--grey); border-radius: 5px; padding: 20px; height: 260px;}
-.note-item {border: 1px solid var(--grey); border-radius: 5px; padding: 5px 10px; cursor: pointer;}
+.note-item {border: 1px solid var(--grey); border-radius: 5px; padding: 5px 10px; cursor: pointer; width: 115px;}
 .note-item>picture {background-image: url("./imgs/note-black.png"); background-repeat: no-repeat; width: 25px; height: 25px;}
 .note-item:hover {background-color: var(--blue);}
 .note-item:hover>picture {background-image: url("./imgs/note-white.png");}
 .note-item:hover>span {color: var(--white);}
 .sub-div {padding: 20px; background-color: var(--white);}
-.calendar-div {width: 100%; height: 500px; border-radius: 5px; border: 1px solid var(--grey);}
-.calendar-div .date-header {display: flex; align-items: center; padding: 20px;}
-.calendar-div .date-before {background-image: url('./imgs/calendar-before-arrow.png'); background-repeat: no-repeat; width: 20px; height: 20px; cursor: pointer; margin: 0 20px;}
-.calendar-div .date-after {background-image: url('./imgs/calendar-after-arrow.png'); background-repeat: no-repeat; width: 20px; height: 20px; cursor: pointer; margin: 0 20px;}
 
 /* 왼사이드바 */
 #left-bar {background-color: var(--lightgrey); border-radius: 5px; padding: 100px 20px 20px 20px; height: fit-content;}

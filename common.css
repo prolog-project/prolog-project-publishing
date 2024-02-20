@@ -79,7 +79,7 @@
 }
 
 /* 전역 */
-html {font-family: 'Inter'; font-weight: var(--medium); color: var(--black);}
+html {font-family: 'Inter'; font-weight: var(--medium); color: var(--black); font-size: 16px;}
 html::-webkit-scrollbar {display: none;}
 p {margin: 0;}
 a {text-decoration: none;}
@@ -142,12 +142,14 @@ select {border-radius: 5px; border: 1px solid var(--grey);}
 /* 버튼 */
 button {border-radius: 5px; font-weight: var(--bold); letter-spacing: 0.5px; cursor: pointer;}
 .header-btns {flex-grow: 1; display: flex; justify-content: right; gap: 20px;}
+.btn-div {dispay:flex; gap: 10px;}
 .btn-white-blue {background-color: var(--white); border: 1px solid var(--blue); color: var(--blue);}
 .btn-white-blue:hover {background-color: var(--blue); border: 1px solid var(--blue); color: var(--white);}
 .btn-white-grey {background-color: var(--white); border: 1px solid var(--grey); color: var(--blue);}
 .btn-white-grey:hover {background-color: var(--blue); border: 1px solid var(--blue); color: var(--white);}
 .btn-blue-blue {background-color: var(--blue); border: 1px solid var(--blue); color: var(--white);}
 .btn-blue-blue:hover {background-color: var(--blue); border: 1px solid var(--blue); color: var(--white);}
+.btn-black-black {background-color: var(--black); border: 1px solid var(--black); color: var(--white);}
 
 /* 태그 */
 .tag {padding: 0 20px; height: 30px; border-radius: 5px; display: flex; justify-content: center; align-items: center; font-weight: var(--semi-bold);}

@@ -136,11 +136,14 @@ select {border-radius: 5px; border: 1px solid var(--grey);}
 .justify-column {display: flex; flex-direction: column;}
 .justify-sub-left {display: flex; align-items: start;}
 .justify-sub-center {display: flex; align-items: center;}
+.justify-sub-right {display: flex; align-items: end;}
 .justify-main-between {display: flex; justify-content: space-between;}
 .justify-main-left {display: flex; justify-content: start;}
 .justify-main-center {display: flex; justify-content: center;}
 
 /* 버튼 */
+.page-up-btn {position: fixed; bottom: 5%; right: 1%;}
+.page-up-btn img{width: 50px;}
 button {border-radius: 5px; font-weight: var(--bold); letter-spacing: 0.5px; cursor: pointer;}
 .header-btns {flex-grow: 1; display: flex; justify-content: right; gap: 20px;}
 .btn-div {dispay:flex; gap: 10px;}
@@ -230,6 +233,14 @@ progress-div {font-weight: var(--regular);}
 .project-teammates {display: flex; gap: 10px; align-items: center; justify-content: start; border:1px solid var(--grey); border-radius: 5px; padding: 10px 15px; width: 245px; cursor: pointer;}
 .project-teammates:hover {background-color: var(--blue); color: var(--white); border: 1px solid var(--blue);}
 .project-teammates img {width: 70px; height: 70px;}
+.project-detail-profile {display: flex; gap: 10px; padding: 20px; flex-wrap: wrap; align-items: start;}
+.project-detail-profile img {width: 160px; height: 160px;}
+.project-detail-profile .progress-p-color {color: var(--green);}
+.note-abstract {border: 1px solid var(--grey); border-radius: 5px; padding: 20px; height: 160px; width: 150px;}
+.note-abstract>p:nth-child(1) {text-align: center;}
+.turn {display: flex; gap: 10px; justify-content: center; padding: 10px;}
+.turn div {border-radius: 30px; width: 6px; height: 6px; background-color: var(--white); border: 1px solid var(--green); cursor: pointer;}
+.turn div.active {background-color: var(--green);}
 
 /* 왼사이드바 */
 #left-bar {background-color: var(--lightgrey); border-radius: 5px; padding: 100px 20px 20px 20px; height: fit-content;}

@@ -87,7 +87,7 @@ a:link {color: var(--black);}
 a:visited {color:var(--black);}
 a:hover {color: var(--blue); font-weight: var(--bold);}
 a:active {color: var(--blue); font-weight: var(--bold);}
-div {overflow-y: overlay; overflow-x: hidden;}
+div {overflow-y: overlay; overflow-x: hidden; box-sizing: border-box;}
 div::-webkit-scrollbar {width: 30px;}
 div::-webkit-scrollbar-thumb {background-clip: padding-box; background-color: var(--blue); border: 20px solid transparent; border-left: 0px; border-radius: 5px;}
 div::-webkit-scrollbar-track {background-clip: padding-box; background-color: var(--expiredgrey); border: 20px solid transparent; border-left: 0px; border-radius: 5px;}
@@ -116,6 +116,7 @@ h1, h2, h3, h4, h5 {margin: 0;}
 .w-250 {width: 250px;}
 .w-30-per {width: 30%;}
 .w-60-per {width: 60%;}
+.w-100-per {width: 100%;}
 .h-30 {height: 30px;}
 .h-35 {height: 35px;}
 .h-45 {height: 45px;}
@@ -228,12 +229,13 @@ button {border-radius: 5px; font-weight: var(--bold); letter-spacing: 0.5px; cur
 progress-div {font-weight: var(--regular);}
 .expired {background-color: var(--expiredgrey);}
 .note-div {background-color: var(--white); border: 1px solid var(--grey); border-radius: 5px; padding: 20px; height: 260px;}
-.note-item {border: 1px solid var(--grey); border-radius: 5px; padding: 5px 10px; cursor: pointer; width: 115px;}
+.note-item {border: 1px solid var(--grey); border-radius: 5px; padding: 5px 10px; cursor: pointer; width: 135px;}
 .note-item>picture {background-image: url("./imgs/note-black.png"); background-repeat: no-repeat; width: 25px; height: 25px;}
 .note-item:hover {background-color: var(--blue);}
 .note-item:hover>picture {background-image: url("./imgs/note-white.png");}
 .note-item:hover>span {color: var(--white);}
 .sub-div {padding: 20px; background-color: var(--white);}
+.sub-div2 {padding: 40px 80px; background-color: var(--white);}
 .progress-div p {font-weight: var(--regular);}
 .project-teammates {display: flex; gap: 10px; align-items: center; justify-content: start; border:1px solid var(--grey); border-radius: 5px; padding: 10px 15px; width: 245px; cursor: pointer;}
 .project-teammates:hover {background-color: var(--blue); color: var(--white); border: 1px solid var(--blue);}
@@ -249,6 +251,7 @@ progress-div {font-weight: var(--regular);}
 .note-abstract-div {border-radius: 5px; background-color: var(--lightpink); padding: 20px;}
 .note-abstract-item {cursor: pointer;}
 .note-abstract-item:hover {background-color: var(--blue); color: var(--white);}
+.sub-content-div {border: 1px solid var(--black); border-radius: 5px; padding: 20px;}
 
 /* 왼사이드바 */
 #left-bar {background-color: var(--lightgrey); border-radius: 5px; padding: 100px 20px 20px 20px; height: fit-content;}

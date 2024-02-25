@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <link rel="stylesheet" href="./common.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prolog</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="header-logo">
+                <span>Prolog</span>
+            </div>
+            <nav class="header-nav">
+                <li><a href="/메인.html">Home</a></li>
+                <li class="on"><a href="/프로젝트_조회.html">Projects</a></li>
+                <li><a href="/마이페이지_조회.html">MyPage</a></li>
+            </nav>
+            <div class="header-btns">
+                <button class="btn-white-blue w-100 h-35">SignUp</button>
+                <button class="btn-white-blue w-100 h-35">Login</button>
+            </div>
+        </div>
+
+        <div id="main" class="grid-1-3">
+            <div class="main-div">
+                <div class="sub-div2 m-t-30 justify-sub-center justify-column gap-40">
+                    <h2>일지 작성</h2>
+                    <div class="w-100-per justify-column gap-10">
+                        <b class="nessary">작성일</b>
+                        <input type="date" value="2023-01-01" />
+                    </div>
+                    <div class="w-100-per justify-column gap-10">
+                        <b class="nessary">일지 제목</b>
+                        <input type="text" />
+                    </div>
+                    <div class="w-100-per justify-column gap-10">
+                        <b>일지 요약</b>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="justify-main-between flex-wrap w-100-per">
+                        <div class="w-50-calc-10 justify-column gap-10 h-400">
+                            <b class="nessary">프로젝트 선택</b>
+                            <div class="item-div">
+                                <div class="item justify-main-between">
+                                    <span class="item-title">프로젝트1</span>
+                                    <div class="progress-div">
+                                        <span>진행도</span>
+                                        <span class="progressing">70%</span>
+                                    </div>
+                                </div>
+                                <div class="item justify-main-between">
+                                    <span class="item-title">프로젝트2</span>
+                                    <div class="progress-div">
+                                        <span>진행도</span>
+                                        <span class="progressing">50%</span>
+                                    </div>
+                                </div>
+                                <div class="item justify-main-between">
+                                    <span class="item-title">프로젝트3</span>
+                                    <div class="progress-div">
+                                        <span>진행도</span>
+                                        <span class="progressing">90%</span>
+                                    </div>
+                                </div>
+                                <div class="item justify-main-between">
+                                    <span class="item-title">프로젝트4</span>
+                                    <div class="progress-div">
+                                        <span>진행도</span>
+                                        <span class="progressing">30%</span>
+                                    </div>
+                                </div>
+                                <div class="item justify-main-between">
+                                    <span class="item-title">프로젝트5</span>
+                                    <div class="progress-div">
+                                        <span>진행도</span>
+                                        <span class="progressing">70%</span>
+                                    </div>
+                                </div>
+                                <div class="item justify-main-between">
+                                    <span class="item-title">프로젝트6</span>
+                                    <div class="progress-div">
+                                        <span>진행도</span>
+                                        <span class="progressing">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-50-calc-10 justify-column gap-10 h-400">
+                            <b>프로젝트 단계</b>
+                            <div class="project-step-div expired">
+                                <div class="project-step-header">
+                                    <div>
+                                        <p>단계명</p>
+                                    </div>
+                                    <div>
+                                        <p>기간</p>
+                                    </div>
+                                </div>
+                                <div class="project-step-content">
+                                    <div>
+                                        <p>요구분석</p>
+                                    </div>
+                                    <div>
+                                        <p>2023-01-01 ~ 2023-02-28</p>
+                                    </div>
+                                </div>
+                                <div class="project-step-content">
+                                    <div>
+                                        <p>분석설계</p>
+                                    </div>
+                                    <div>
+                                        <p>2023-03-01 ~ 2023-04-30</p>
+                                    </div>
+                                </div>
+                                <div class="project-step-content active">
+                                    <div>
+                                        <p>구현</p>
+                                    </div>
+                                    <div>
+                                        <p>2023-05-01 ~ 2023-06-15</p>
+                                    </div>
+                                </div>
+                                <div class="project-step-content">
+                                    <div>
+                                        <p>시험 및 배포</p>
+                                    </div>
+                                    <div>
+                                        <p>2023-06-16 ~ 2023-07-31</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100-per justify-column gap-10">
+                        <b class="nessary">일지 내용</b>
+                        <div class="justify-main-left gap-40 justify-sub-center">
+                            <b class="p-l-20">작성 방법</b>
+                            <div class="justify-main-left gap-10">
+                                <button class="btn-white-blue h-45 w-140">블로그 형식</button>
+                                <button class="btn-white-blue active h-45 w-140">섹션 형식</button>
+                            </div>
+                        </div>
+                        <div class="justify-column gap-20 m-t-10">
+                            <div class="justify-column gap-10">
+                                <b class="p-l-20">#소제목1</b>
+                                <input type="text" />
+                            </div>
+                            <div class="justify-column gap-10">
+                                <b class="p-l-20">#본문1</b>
+                                <textarea class="w-100-per" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="justify-main-between">
+                                <button class="btn-white-blue h-35 w-50-calc-10">섹션 추가</button>
+                                <button class="btn-white-red h-35 w-50-calc-10">세션 삭제</button>
+                            </div>
+                        </div>
+                        <div class="justify-main-right m-t-30 w-100-per">
+                            <button class="btn-blue-blue w-100 h-35">일지 저장</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <picture class="page-up-btn">
+        <img src="./imgs/page-up.png" alt="">
+    </picture>
+</body>
+</html>

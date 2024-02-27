@@ -129,9 +129,11 @@ textarea {border: 2px solid var(--black); padding: 20px; border-radius: 5px; fon
 .h-30 {height: 30px;}
 .h-35 {height: 35px;}
 .h-45 {height: 45px;}
+.h-60 {height: 60px;}
 .h-200 {height: 200px;}
 .h-300 {height: 300px;}
 .h-400 {height: 400px;}
+.h-450 {height: 450px;}
 .f-g-1 {flex-grow: 1;}
 .f-g-3 {flex-grow: 3;}
 
@@ -335,3 +337,4 @@ progress-div {font-weight: var(--regular);}
 .invite-teammates-list .invite-teammates>p:nth-last-child(2){color: var(--grey);}
 .invite-teammates-list .invite-teammates img{width: 100%;}
 .invite-teammates-list .invite-teammates button{width: 100%; margin-top: 10px;}
+.warning {color: red; margin-left: 20px;}

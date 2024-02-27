@@ -119,6 +119,7 @@ textarea {border: 2px solid var(--black); padding: 20px; border-radius: 5px; fon
 .w-100 {width: 100px;}
 .w-140 {width: 140px;}
 .w-185 {width: 185px;}
+.w-200 {width: 200px;}
 .w-250 {width: 250px;}
 .w-400 {width: 400px;}
 .w-30-per {width: 30%;}
@@ -130,10 +131,12 @@ textarea {border: 2px solid var(--black); padding: 20px; border-radius: 5px; fon
 .h-35 {height: 35px;}
 .h-45 {height: 45px;}
 .h-60 {height: 60px;}
+.h-70 {height: 70px;}
 .h-200 {height: 200px;}
 .h-300 {height: 300px;}
 .h-400 {height: 400px;}
 .h-450 {height: 450px;}
+.h-500 {height: 500px;}
 .f-g-1 {flex-grow: 1;}
 .f-g-3 {flex-grow: 3;}
 
@@ -152,11 +155,14 @@ textarea {border: 2px solid var(--black); padding: 20px; border-radius: 5px; fon
 .gap-h-20 {gap: 20px 0;}
 
 /* 마진 */
-.m-t-10 {margin-top: 10px;}
-.m-t-30 {margin-top: 30px;}
-.m-b-30 {margin-bottom: 30px;}
 .m-10-0 {margin: 10px 0;}
+.m-t-5 {margin-top: 5px;}
+.m-t-10 {margin-top: 10px;}
+.m-t-15 {margin-top: 15px;}
+.m-t-30 {margin-top: 30px;}
+.m-b-10 {margin-bottom: 10px;}
 .m-b-20 {margin-bottom: 20px;}
+.m-b-30 {margin-bottom: 30px;}
 
 /* 패딩 */
 .p-10-0-10-20 {padding: 10px 0 10px 20px;}
@@ -337,4 +343,5 @@ progress-div {font-weight: var(--regular);}
 .invite-teammates-list .invite-teammates>p:nth-last-child(2){color: var(--grey);}
 .invite-teammates-list .invite-teammates img{width: 100%;}
 .invite-teammates-list .invite-teammates button{width: 100%; margin-top: 10px;}
-.warning {color: red; margin-left: 20px;}
+.warning {color: var(--red); margin-left: 20px;}
+.confirm {color: var(--green); margin-left: 20px;}
